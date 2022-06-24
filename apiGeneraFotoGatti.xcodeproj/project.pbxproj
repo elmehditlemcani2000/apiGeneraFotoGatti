@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36F89E6A410E4C29BAA4FD18 /* Pods_apiGeneraFotoGatti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9499B1E8D03ED7A160483B6C /* Pods_apiGeneraFotoGatti.framework */; };
 		CE0614362864786D007621FA /* apiGeneraFotoGattiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0614352864786D007621FA /* apiGeneraFotoGattiApp.swift */; };
 		CE0614382864786D007621FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0614372864786D007621FA /* ContentView.swift */; };
 		CE06143A2864786E007621FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0614392864786E007621FA /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69B0009DCEA4B73A56704B64 /* Pods-apiGeneraFotoGatti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-apiGeneraFotoGatti.release.xcconfig"; path = "Target Support Files/Pods-apiGeneraFotoGatti/Pods-apiGeneraFotoGatti.release.xcconfig"; sourceTree = "<group>"; };
+		866B51845F79300668FC5D61 /* Pods-apiGeneraFotoGatti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-apiGeneraFotoGatti.debug.xcconfig"; path = "Target Support Files/Pods-apiGeneraFotoGatti/Pods-apiGeneraFotoGatti.debug.xcconfig"; sourceTree = "<group>"; };
+		9499B1E8D03ED7A160483B6C /* Pods_apiGeneraFotoGatti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_apiGeneraFotoGatti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0614322864786D007621FA /* apiGeneraFotoGatti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apiGeneraFotoGatti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0614352864786D007621FA /* apiGeneraFotoGattiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiGeneraFotoGattiApp.swift; sourceTree = "<group>"; };
 		CE0614372864786D007621FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F89E6A410E4C29BAA4FD18 /* Pods_apiGeneraFotoGatti.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				CE0614342864786D007621FA /* apiGeneraFotoGatti */,
 				CE0614332864786D007621FA /* Products */,
+				D4BDE8245DE63028B0A69A48 /* Pods */,
+				E5E32BB497BFE22C5611B5DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D4BDE8245DE63028B0A69A48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				866B51845F79300668FC5D61 /* Pods-apiGeneraFotoGatti.debug.xcconfig */,
+				69B0009DCEA4B73A56704B64 /* Pods-apiGeneraFotoGatti.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5E32BB497BFE22C5611B5DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9499B1E8D03ED7A160483B6C /* Pods_apiGeneraFotoGatti.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0614402864786E007621FA /* Build configuration list for PBXNativeTarget "apiGeneraFotoGatti" */;
 			buildPhases = (
+				E22A8754C347254269B5DFE5 /* [CP] Check Pods Manifest.lock */,
 				CE06142E2864786D007621FA /* Sources */,
 				CE06142F2864786D007621FA /* Frameworks */,
 				CE0614302864786D007621FA /* Resources */,
+				CB5DB7BDB0B0DAFE2516A4E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,6 +137,10 @@
 				Base,
 			);
 			mainGroup = CE0614292864786D007621FA;
+			packageReferences = (
+				CE0614432864788D007621FA /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				CE06144428647916007621FA /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = CE0614332864786D007621FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB5DB7BDB0B0DAFE2516A4E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-apiGeneraFotoGatti/Pods-apiGeneraFotoGatti-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-apiGeneraFotoGatti/Pods-apiGeneraFotoGatti-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-apiGeneraFotoGatti/Pods-apiGeneraFotoGatti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E22A8754C347254269B5DFE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-apiGeneraFotoGatti-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE06142E2864786D007621FA /* Sources */ = {
@@ -261,6 +333,7 @@
 		};
 		CE0614412864786E007621FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866B51845F79300668FC5D61 /* Pods-apiGeneraFotoGatti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +362,7 @@
 		};
 		CE0614422864786E007621FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B0009DCEA4B73A56704B64 /* Pods-apiGeneraFotoGatti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -337,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE0614432864788D007621FA /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zhigang1992/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CE06144428647916007621FA /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zhigang1992/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = CE06142A2864786D007621FA /* Project object */;
 }
